@@ -1,11 +1,7 @@
 def calculator(txt):
     t = txt.split(" ")
-    counter1 = 0
-    counter2 = 0
+    counter1 = str(len(t[0]))
+    counter2 = str(len(t[2]))
     pr = t[1]
-    for i in t[0]:
-        counter1 += 1
-    for i in t[2]:
-        counter2 += 1
-    res = str(counter1) + pr + str(counter2)
+    res = counter1 + pr + counter2
     return eval(res) * "."
